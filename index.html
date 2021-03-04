@@ -8,7 +8,7 @@
   </head>
   <body>
     <h1>Creaete An Account</h1>
-
+    <form>
     <div>
     <label for="firstname">First name</label>
     <input type="text" name="firstname" id="firstname" placeholder="First name" required> 
@@ -20,6 +20,56 @@
     placeholder="Last name" required>
     </div>
 
-    </label>
+    <div>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email"
+      placeholder="Email" required>
+    </div>
+
+    <div>
+      <label for = "Username">Username</label>
+      <input type="text" name="username" id="username"
+      placeholder="Username" required>
+    </div>
+
+    <div>
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password"
+      placeholder="Password" required minlength="10">
+    </div>
+
+    <div>
+      <label for="birth">Birth Date</label>
+      <input type="date" name="birth" id="birth"
+      placeholder="Birth Date" required>
+    </div>
+
+    <div>
+      <label for="happy">How happy are you?</label>
+      <input type="range" step="10" min="0" max="100" list="tickmarks" name="happy" id="happy" required>
+      <datalist id="tickmarks">
+        <option value="0"></option>
+        <option value="10"></option>
+        <option value="20"></option>
+        <option value="30"></option>
+        <option value="40"></option>
+        <option value="50"></option>
+        <option value="60"></option>
+        <option value="70"></option>
+        <option value="80"></option>
+        <option value="90"></option>
+        <option value="100"></option>
+      </datalist>
+    </div>
+
+    <div>
+      <label for="color">What is your fav.color?</label>
+      <input type="color" id="color" name="color">
+    </div>
+
+    <input type="submit" value="Create Account">
+    </form>
+
+    
   </body>
 </html>
